@@ -18,7 +18,7 @@ class UsuarioController{
             const novoUsuario = await Usuario.create({nome, email, senha: senhaHash, cargo})
             return res.status(201).json({mensagem: 'Usuário cadastrado com sucesso', id: novoUsuario.id, email: novoUsuario.email})
 
-        } catch(e){
+        }catch(e){
             res.status(500).json({mensagem: `Ocorreu um erro ao criar usuário! -> ${e}`})
             
         }
@@ -36,7 +36,7 @@ class UsuarioController{
             //compara a senha enviada com a criptorgrafada no banco
             const senhaValida = await bcrypt.compare(senha, usuario.senha)
             if(!senhaValida){
-                return res.status(401).json({ erro: 'Email ou senha inválidos!'})
+                return res.status(401).json({erro: 'Email ou senha inválidos!'})
             }
             //gerar o token jwt, o payload contem id e cargo para usar nas permissões depois
             const token = jwt.sign(
