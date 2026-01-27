@@ -77,6 +77,7 @@ O projeto está organizado conforme o padrão Model-View-Controller:
    ```
 
 ##Diagrama de Entidade e Relacionamento (DER)
+```mermaid
 erDiagram
     USUARIO ||--o{ EMPRESTIMO : realiza
     AUTOR ||--o{ LIVRO : escreve
@@ -119,5 +120,3 @@ erDiagram
         int id
         string nome
     }
-
-    
