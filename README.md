@@ -72,9 +72,9 @@ O projeto está organizado rigorosamente conforme o padrão Model-View-Controlle
    npm install
    ```
 4. Inicie o servidor:
-```bash
-  npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 ##Diagrama de Entidade e Relacionamento (DER)
 erDiagram
