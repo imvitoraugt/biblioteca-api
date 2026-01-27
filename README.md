@@ -76,7 +76,8 @@ O projeto está organizado conforme o padrão Model-View-Controller:
    npm run dev
    ```
 
-##Diagrama de Entidade e Relacionamento (DER)
+## 📊 Diagrama Entidade-Relacionamento (DER)
+
 ```mermaid
 erDiagram
     USUARIO ||--o{ EMPRESTIMO : realiza
