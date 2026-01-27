@@ -14,7 +14,7 @@ Desenvolver um back-end para gerenciamento de biblioteca que vá além do CRUD b
 * **BcryptJS** (Criptografia de senhas)
 
 ## 🏛️ Arquitetura MVC
-O projeto está organizado rigorosamente conforme o padrão Model-View-Controller:
+O projeto está organizado conforme o padrão Model-View-Controller:
 - `src/models`: Definição das tabelas e relacionamentos (ORM).
 - `src/controllers`: Gerenciamento das requisições e respostas HTTP.
 - `src/services`: **Regras de Negócio** isoladas (validações de estoque, datas, multas).
